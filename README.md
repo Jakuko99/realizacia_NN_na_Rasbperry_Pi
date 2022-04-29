@@ -1,0 +1,1 @@
+# realizacia_NN_na_Rasbperry_Pi
