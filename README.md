@@ -9,7 +9,7 @@ Každá detekovaná kvapka na obrázku má priradenú pravdepodobnosť s akou si
 Dataset je tvorený 200 obrázkami, každý z nich obsahuje aspoň jednu kvapku, zopár z nich obsahuje až 6 kvapiek. Fotografie boli zhotovené pomocou BASLER 15 MPx kamery komunikujúcej na rozhraní USB 3.0. 
 ## Detekcia
 V zložke GUI sa nachádza grafický program, ktorý sa použil na detekciu obrázkov, buď načítaním zo súboru alebo pomocou snímania z Raspberry Pi kamery (aj keď táto funkcionalita plne nefunguje).
-![GUI window](images/gui_window.jpg)
+![GUI window](images/GUI_window.jpg)
 *<p align="center"> Obr. 2 Grafický program na detekciu</p>*
 ## Presnosť modelu
 Presnosť modelu sa pohybuje okolo 95%, väčšie kvapky sú v poriadku detekované, model má problémy s detekciou menších kvapeek, laebo keď sa nachádzajú pod kontaktmi čipov poprípade na rezistoroch pre meranie prúdu.
