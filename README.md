@@ -9,7 +9,7 @@ Každá detekovaná kvapka na obrázku má priradenú pravdepodobnosť s akou si
 Dataset je tvorený 200 obrázkami, každý z nich obsahuje aspoň jednu kvapku, zopár z nich obsahuje až 6 kvapiek. Fotografie boli zhotovené pomocou BASLER 15 MPx kamery komunikujúcej na rozhraní USB 3.0. 
 ## Detekcia
 V zložke GUI sa nachádza grafický program, ktorý sa použil na detekciu obrázkov, buď načítaním zo súboru alebo pomocou snímania z Raspberry Pi kamery (aj keď táto funkcionalita plne nefunguje).
-![GUI window](images/gui_window.jpg)
+![GUI window](images/GUI_window.jpg)
 *<p align="center"> Obr. 2 Grafický program na detekciu</p>*
 ## Presnosť modelu
 Presnosť modelu sa pohybuje okolo 95%, väčšie kvapky sú v poriadku detekované, model má problémy s detekciou menších kvapeek, laebo keď sa nachádzajú pod kontaktmi čipov poprípade na rezistoroch pre meranie prúdu.
@@ -22,10 +22,11 @@ Natrénovaná sieť je vyhovujúca pre použitie v priemysle pre kontrolu dosiek
 
 ## Použitie detekcie
 Model bol trénovaný pomocou oficiálnej [yolov5 repository](https://github.com/ultralytics/yolov5), detekcia je realizovaná na Raspberry Pi s použitím knižnice Torch.
-Príkaz na detekciu pomocou terminalu:
+Príkaz na detekciu pomocou terminalu v zložke yolov5:
 ```
-python3 detect.py --img 1024 --source dataset_preview/0000.bmp --weights best.pt
+python3 detect.py --img 1024 --source (cesta k obrázku) --weights best.pt
 ```
+Pre využitie detekcie je potrebné mať nainštalované knižnice v `GUI/requirements.txt`.
 
 *Tabuľka časov detekcie na RPi*
 | Veľkosť parametra *(--img)* | Čas detekcie | Presnosť |
