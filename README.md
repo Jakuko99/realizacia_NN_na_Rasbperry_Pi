@@ -19,6 +19,7 @@ Natrénovaná sieť je vyhovujúca pre použitie v priemysle pre kontrolu dosiek
 - GUI program na detekciu `GUI/`
 - Ukázka datasetu `dataset_preview/`
 - Váhy natrénovaného modelu `best.pt`
+- Elektronická verzia dokumentácie k bakalárskej práci `Dokumentacia_BP.pdf`
 
 ## Použitie detekcie
 Model bol trénovaný pomocou oficiálnej [yolov5 repository](https://github.com/ultralytics/yolov5), detekcia je realizovaná na Raspberry Pi s použitím knižnice Torch.
@@ -32,7 +33,7 @@ Pre využitie detekcie je potrebné mať nainštalované knižnice v `GUI/requir
 | Veľkosť parametra *(--img)* | Čas detekcie | Presnosť |
 |-----------------------|-------------|-----------|
 | Originál (4608x3288) | - | 6 kvapiek |
-| 600 | 3,1 s | 0/6 kvapiek |
+| 600 | 3,1 s | 0/6 kvapiek  |
 | 1024 | 5,2 s | 2/6 kvapiek |
 | 2048 | 21,9 s | 4/6 kvapiek |
 | 3072 | 53,1 s | 5/6 kvapiek |
