@@ -16,8 +16,8 @@
   <widget class="QPushButton" name="button1">
    <property name="geometry">
     <rect>
-     <x>820</x>
-     <y>665</y>
+     <x>10</x>
+     <y>667</y>
      <width>93</width>
      <height>28</height>
     </rect>
@@ -36,14 +36,17 @@
     </rect>
    </property>
    <property name="text">
-    <string>TextLabel</string>
+    <string>Image viewpoint</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
    </property>
   </widget>
   <widget class="QPushButton" name="button2">
    <property name="geometry">
     <rect>
-     <x>720</x>
-     <y>665</y>
+     <x>110</x>
+     <y>667</y>
      <width>93</width>
      <height>28</height>
     </rect>
@@ -53,10 +56,13 @@
    </property>
   </widget>
   <widget class="QPushButton" name="button3">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
    <property name="geometry">
     <rect>
-     <x>620</x>
-     <y>665</y>
+     <x>340</x>
+     <y>667</y>
      <width>93</width>
      <height>28</height>
     </rect>
@@ -66,11 +72,14 @@
    </property>
   </widget>
   <widget class="QCheckBox" name="checkbox1">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
    <property name="geometry">
     <rect>
-     <x>515</x>
-     <y>668</y>
-     <width>101</width>
+     <x>440</x>
+     <y>670</y>
+     <width>111</width>
      <height>20</height>
     </rect>
    </property>
@@ -81,14 +90,32 @@
   <widget class="QPushButton" name="button4">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>665</y>
+     <x>820</x>
+     <y>667</y>
      <width>93</width>
      <height>28</height>
     </rect>
    </property>
    <property name="text">
     <string>Exit</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label2">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>670</y>
+     <width>211</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Detection time: 0.0 s</string>
    </property>
   </widget>
  </widget>
